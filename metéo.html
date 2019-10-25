@@ -1,0 +1,210 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Météo</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark elegant-color">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Maison de Léo</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Maison de Léo
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://noah-chatelain.fr">Noah</a>
+        </li>
+
+
+    </div>
+    <!-- Collapsible content -->
+
+  </nav>
+  <!--/.Navbar-->
+
+
+
+
+
+
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mt-5">
+
+        <!-- Material input -->
+        <div class="row">
+          <div class="col-md-3">
+            <div class="md-form">
+              <input type="text" id="text" class="form-control">
+              <label for="text">Ville</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-1">
+            <img id="image" src="" alt="">
+          </div>
+          <div class="col-md-11">
+            <h1 id="h1" class="mt-3 ml-3"></h1>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <!-- Card -->
+        <div class="card weather-card">
+
+          <!-- Card content -->
+          <div class="card-body pb-3">
+
+            <!-- Title -->
+            <h4 class="card-title font-weight-bold" id="nom"></h4>
+            <!-- Text -->
+            <p class="card-text">Mon, 12:30 PM, Mostly Sunny</p>
+            <div class="d-flex justify-content-between">
+              <p class="display-1 degree" id="degre"></p>
+              <i class="fas fa-sun-o fa-5x pt-3 amber-text"></i>
+            </div>
+            <div class="d-flex justify-content-between mb-4">
+                <i class="fas fa-tint fa-lg text-info pr-2"></i><p id="humidity"></p>
+              <i class="fas fa-leaf fa-lg grey-text pr-2"></i><p id="wendy"></p>
+            </div>
+            <div class="progress md-progress">
+              <div class="progress-bar black" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+            <ul class="list-unstyled d-flex justify-content-between font-small text-muted mb-4">
+              <li class="pl-4">8AM</li>
+              <li>11AM</li>
+              <li>2PM</li>
+              <li>5PM</li>
+              <li class="pr-4">8PM</li>
+            </ul>
+
+            <div class="collapse-content">
+
+              <div class="collapse" id="collapseExample">
+
+                <table class="table table-borderless table-sm mb-0">
+                  <tbody>
+                    <tr>
+                      <td class="font-weight-normal align-middle">Tuesday</td>
+                      <td class="float-right font-weight-normal">
+                        <p class="mb-1">24&deg;<span class="text-muted">/12&deg;</span></p>
+                      </td>
+                      <td class="float-right mr-3">
+                        <i class="fas fa-sun fa-lg amber-text"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="font-weight-normal align-middle">Wednesday</td>
+                      <td class="float-right font-weight-normal">
+                        <p class="mb-1">19&deg;<span class="text-muted">/10&deg;</span></p>
+                      </td>
+                      <td class="float-right mr-3">
+                        <i class="fas fa-cloud-sun-rain fa-lg text-info"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="font-weight-normal align-middle">Thursday</td>
+                      <td class="float-right font-weight-normal">
+                        <p class="mb-1">23&deg;<span class="text-muted">/15&deg;</span></p>
+                      </td>
+                      <td class="float-right mr-3">
+                        <i class="fas fa-sun fa-lg amber-text"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="font-weight-normal align-middle">Friday</td>
+                      <td class="float-right font-weight-normal">
+                        <p class="mb-1">26&deg;<span class="text-muted">/19&deg;</span></p>
+                      </td>
+                      <td class="float-right mr-3">
+                        <i class="fas fa-sun fa-lg amber-text"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="font-weight-normal align-middle">Saturday</td>
+                      <td class="float-right font-weight-normal">
+                        <p class="mb-1">20&deg;<span class="text-muted">/16&deg;</span></p>
+                      </td>
+                      <td class="float-right mr-3">
+                        <i class="fas fa-cloud fa-lg text-info"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="font-weight-normal align-middle">Sunday</td>
+                      <td class="float-right font-weight-normal">
+                        <p class="mb-1">22&deg;<span class="text-muted">/13&deg;</span></p>
+                      </td>
+                      <td class="float-right mr-3">
+                        <i class="fas fa-cloud-sun fa-lg text-info"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+
+              <hr class="">
+
+              <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 deep-purple-text collapsed" data-toggle="collapse"
+                href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></a>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Card -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.js"></script>
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
